@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<RootNamespace>Regul.S3PE</RootNamespace>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<AssemblyVersion>0.2.0.0</AssemblyVersion>
+		<FileVersion>0.2.0.0</FileVersion>
+		<TargetFramework>netstandard2.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia" Version="0.10.12" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AvaloniaResource Include="icon.png" />
+		<AvaloniaResource Include="Icons.axaml" />
+		<AvaloniaResource Include="S3PEStyles.axaml" />
+
+		<Reference Include="Avalonia.Controls.DataGrid">
+			<HintPath>..\..\..\Regul\src\Regul\bin\Debug\net461\Avalonia.Controls.DataGrid.dll</HintPath>
+			<Private>false</Private>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</Reference>
+		<Reference Include="AvaloniaEdit">
+			<HintPath>..\..\..\Regul\src\Regul\bin\Debug\net461\AvaloniaEdit.dll</HintPath>
+			<Private>false</Private>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</Reference>
+		<Reference Include="Onebeld.Extensions">
+			<HintPath>..\..\..\Regul\src\Regul\bin\Debug\net461\Onebeld.Extensions.dll</HintPath>
+			<Private>false</Private>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</Reference>
+		<Reference Include="PleasantUI">
+			<HintPath>..\..\..\Regul\src\Regul\bin\Debug\net461\PleasantUI.dll</HintPath>
+			<Private>false</Private>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</Reference>
+		<Reference Include="Regul.Assets">
+			<HintPath>..\..\..\Regul\src\Regul\bin\Debug\net461\Regul.Assets.dll</HintPath>
+			<Private>false</Private>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</Reference>
+		<Reference Include="Regul.Base">
+			<HintPath>..\..\..\Regul\src\Regul\bin\Debug\net461\Regul.Base.dll</HintPath>
+			<Private>false</Private>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</Reference>
+		<Reference Include="Regul.ModuleSystem">
+			<HintPath>..\..\..\Regul\src\Regul\bin\Debug\net461\Regul.ModuleSystem.dll</HintPath>
+			<Private>false</Private>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</Reference>
+		<Reference Include="Regul.Settings">
+			<HintPath>..\..\..\Regul\src\Regul\bin\Debug\net461\Regul.Settings.dll</HintPath>
+			<Private>false</Private>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</Reference>
+		<Reference Include="System.Custom">
+			<HintPath>..\..\..\Regul\src\Regul\bin\Debug\net461\System.Custom.dll</HintPath>
+			<Private>false</Private>
+			<ExcludeAssets>runtime</ExcludeAssets>
+		</Reference>
+
+		<ProjectReference Include="..\Regul.S3PI\Regul.S3PI\Regul.S3PI.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Pfim" Version="0.10.3" />
+		<PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta14" />
+	</ItemGroup>
+</Project>
